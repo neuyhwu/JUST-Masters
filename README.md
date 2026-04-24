@@ -1,33 +1,37 @@
-# JUST-Masters 知识库
+# 🎓 JUST-YINGHUIWU 运筹优化研究生知识库
 
-一个使用MkDocs + Material主题搭建的组织化知识库网站。
+一个面向研究生的综合学习平台，采用MkDocs + Material主题搭建，汇集**运筹学、优化算法、编程技术和机器学习**的系统化资源。
 
 ## 📖 访问网站
 
-[在线查看网站](https://your-github-username.github.io/JUST-Masters/)
+[在线查看网站](https://neuyhwu.github.io/JUST-Masters/)
 
-> 注意：请将上面的URL中的 `your-github-username` 替换为你的GitHub用户名
+**网站名称**：JUST-YINGHUIWU-And-He's-Masters  
+**学科方向**：运筹学、优化算法、编程与机器学习
 
 ## 📁 项目结构
 
 ```
 .
 ├── site/
-│   ├── mkdocs.yml          # MkDocs配置文件
-│   └── docs/               # 文档源文件
-│       ├── index.md        # 首页
-│       ├── getting-started.md
-│       ├── about.md
-│       ├── philosophy/     # 哲学分类
-│       ├── literature/     # 文学分类
-│       ├── history/        # 历史分类
-│       └── arts/          # 艺术分类
-├── venv/                   # Python虚拟环境
+│   ├── mkdocs.yml                    # MkDocs配置文件
+│   └── docs/                         # 文档源文件
+│       ├── index.md                  # 首页
+│       ├── getting-started.md        # 入门指南
+│       ├── about.md                  # 关于本知识库
+│       ├── resources.md              # 学习资源汇总
+│       ├── operations-research/      # 📘 运筹学模块 (4个文件)
+│       ├── optimization-algorithms/  # ⚙️ 优化算法模块 (4个文件)
+│       ├── python-programming/       # 🐍 Python编程模块 (4个文件)
+│       ├── java-programming/         # ☕ Java编程模块 (4个文件)
+│       ├── gurobi-solver/            # 🔧 Gurobi求解器模块 (4个文件)
+│       └── machine-learning/         # 🤖 机器学习模块 (4个文件)
+├── venv/                             # Python虚拟环境
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml      # GitHub Actions自动部署工作流
-├── .gitignore              # Git忽略文件
-└── README.md               # 本文件
+│       └── deploy.yml                # GitHub Actions自动部署工作流
+├── .gitignore                        # Git忽略文件
+└── README.md                         # 本文件
 ```
 
 ## 🚀 本地开发
@@ -78,28 +82,41 @@
 
 编辑 `site/docs/` 目录中的markdown文件，保存后网站会自动刷新。
 
-## 📚 包含的分类
+## 📚 六大核心模块
 
-### 🤔 哲学
-- 西方哲学 - 从古希腊到现代哲学的发展历程
-- 马克思主义 - 马克思主义理论和实践
+### 📘 运筹学模块
+- **线性规划（LP）** - 单纯形法、对偶理论、灵敏度分析
+- **整数规划（IP）** - 建模技巧、分支界算法、割平面法
+- **网络流问题** - 最短路径、最大流、最小费用流
 
-### 📖 文学
-- 诗歌 - 各地诗歌艺术和作品欣赏
-- 小说 - 经典小说和现代文学
+### ⚙️ 优化算法模块
+- **启发式算法** - 贪心法、局部搜索、最近邻启发式
+- **元启发式算法** - 遗传算法、粒子群优化、模拟退火、蚁群算法
+- **高级优化方法** - 分支界、割平面法、列生成、拉格朗日松弛
 
-### 🌍 历史
-- 中国历史 - 从上古到现代的中国历史
-- 世界历史 - 全球历史发展和重要事件
+### 🐍 Python编程模块
+- **基础语法** - 数据类型、函数、面向对象、函数式编程
+- **科学计算库** - NumPy、SciPy、Pandas数据处理
+- **数据处理与分析** - 数据清洗、可视化、统计分析
 
-### 🎭 艺术
-- 视觉艺术 - 绘画、雕塑、摄影、建筑
-- 音乐 - 音乐历史、作曲家和音乐欣赏
+### ☕ Java编程模块
+- **面向对象编程** - 类、接口、继承、多态、设计模式
+- **集合与流处理** - Collections框架、Stream API、函数式接口
+- **并发编程** - Thread、锁、线程池、并发容器
 
-## 🔧 部署
+### 🔧 Gurobi求解器模块
+- **安装与配置** - 环境设置、许可证管理、Python集成
+- **Python接口** - 模型构建、求解、参数配置、结果分析
+- **高级应用** - 多目标优化、参数调优、自定义回调、性能优化
 
-### 自动部署到GitHub Pages
+### 🤖 机器学习模块
+- **监督学习** - 线性回归、逻辑回归、SVM、决策树、集成方法
+- **无监督学习** - K-means聚类、层次聚类、PCA降维、异常检测
+- **深度学习基础** - 神经网络、反向传播、CNN、RNN、TensorFlow/PyTorch
 
+## � 部署流程
+
+### 自动部署
 代码会自动部署到GitHub Pages。每次推送到main分支，GitHub Actions会自动构建和部署网站。
 
 ```bash
@@ -108,8 +125,9 @@ git commit -m "更新内容"
 git push origin main
 ```
 
-### 手动部署（可选）
+部署通常需要2-5分钟完成。
 
+### 本地构建
 ```bash
 cd site
 mkdocs build
@@ -117,7 +135,24 @@ mkdocs build
 
 生成的静态网站会输出到 `site/site/` 目录。
 
-## 📝 写作指南
+## � 学习路径建议
+
+### 初级研究生（第一学期）
+1. 从 **运筹学** 模块开始，理解优化问题的基本概念
+2. 学习 **Python编程**，掌握科学计算工具链
+3. 实践 **Python科学计算库**，做简单的数据分析
+
+### 中级研究生（第二学期）
+1. 深入 **优化算法** 模块，理解各类求解方法
+2. 学习 **Gurobi求解器**，掌握专业优化工具
+3. 入门 **机器学习**，学习监督和无监督算法
+
+### 高级研究生（第三-四学期）
+1. 研究 **高级优化** 方法，如分支界、列生成
+2. 掌握 **Java并发编程**，构建高性能系统
+3. 深入 **深度学习**，学习复杂的神经网络模型
+
+## �📝 写作指南
 
 ### Markdown语法
 
@@ -168,46 +203,27 @@ def hello():
 - 更新 `site/mkdocs.yml` 中的导航菜单
 - 使用中文文件名，避免特殊字符
 
-## 🔗 配置GitHub Pages
+## 🔗 GitHub Pages配置
 
-1. 打开你的仓库：`https://github.com/your-username/JUST-Masters`
-2. 点击 **Settings** 标签
-3. 左侧菜单找到 **Pages**
-4. 在 "Build and deployment" 部分：
-   - Source 选择：`Deploy from a branch`
-   - Branch 选择：`main / root`
-5. 点击 **Save**
+该仓库已配置为自动部署到GitHub Pages。每次推送到main分支，GitHub Actions会自动：
+1. 拉取最新代码
+2. 使用MkDocs编译网站
+3. 部署到gh-pages分支
+4. 发布到 https://neuyhwu.github.io/JUST-Masters/
 
-部署通常需要1-3分钟。部署完成后，你的网站会发布到：
-```
-https://your-username.github.io/JUST-Masters/
-```
+**部署时间**：通常需要2-5分钟。
 
-## 🎨 定制
+## 🎨 网站定制
 
-### 修改网站标题和描述
-
+### 修改网站标题
 编辑 `site/mkdocs.yml`：
-
 ```yaml
-site_name: 你的网站标题
-site_description: 网站描述
-site_author: 你的名字
+site_name: JUST-YINGHUIWU-And-He's-Masters
+site_description: 面向研究生的运筹学、优化算法、编程与机器学习综合学习平台
 ```
 
 ### 修改主题颜色
-
-编辑 `site/mkdocs.yml` 中的 `theme` 部分：
-
-```yaml
-theme:
-  palette:
-    - scheme: default
-      primary: blue      # 改为其他颜色
-      accent: indigo
-```
-
-可用颜色：red, pink, purple, deep-purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange
+编辑 `site/mkdocs.yml` 中的 `theme.palette` 部分改变主题色。
 
 ## 🐛 故障排除
 
@@ -256,9 +272,8 @@ site_url: https://your-username.github.io/JUST-Masters/
 
 ## 📧 联系方式
 
-- 📧 Email: your-email@example.com
-- 🐙 GitHub: [@your-username](https://github.com/your-username)
-- 🐦 Twitter: [@your-twitter]
+- � GitHub: [@neuyhwu](https://github.com/neuyhwu)
+- 📚 知识库: [JUST-YINGHUIWU](https://neuyhwu.github.io/JUST-Masters/)
 
 ## 📚 参考资源
 
@@ -269,6 +284,14 @@ site_url: https://your-username.github.io/JUST-Masters/
 
 ---
 
+## 📊 项目统计
+- **6个核心模块** - 运筹学、优化算法、Python、Java、Gurobi、机器学习
+- **24个主要章节** - 系统化的知识划分
+- **100+个代码示例** - 实践导向的学习材料
+- **学习路径** - 适合初/中/高级研究生的进阶计划
+
 **最后更新**: 2026年4月25日
 
-**在线访问**: [https://your-github-username.github.io/JUST-Masters/](https://your-github-username.github.io/JUST-Masters/)
+**在线访问**: [https://neuyhwu.github.io/JUST-Masters/](https://neuyhwu.github.io/JUST-Masters/)
+
+**项目名称**: JUST-YINGHUIWU - 运筹优化研究生知识库
