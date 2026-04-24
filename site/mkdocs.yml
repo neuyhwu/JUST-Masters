@@ -7,8 +7,6 @@ site_url: https://neuyhwu.github.io/JUST-Masters/
 theme:
   name: material
   language: zh
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
   
   # Material主题特性
   features:
