@@ -62,22 +62,34 @@
 选择下方任一模块，开始你的运筹优化和数据科学之旅：
 
 ??? note "📘 运筹学 - 从决策优化开始"
-    运筹学是通过数学建模和优化算法解决实际问题的学科。[进入模块 →](operations-research/index.md)
+    运筹学是通过数学建模和优化算法解决实际问题的学科。
+    
+    [进入模块 →](operations-research/index.md)
 
 ??? note "⚙️ 优化算法 - 掌握问题求解方法"
-    从经典启发式到前沿元启发式，系统学习各类优化算法。[进入模块 →](optimization-algorithms/index.md)
+    从经典启发式到前沿元启发式，系统学习各类优化算法。
+    
+    [进入模块 →](optimization-algorithms/index.md)
 
 ??? note "🐍 Python编程 - 科学计算基石"
-    Python是科学计算和数据分析的首选，掌握NumPy、SciPy、Pandas等关键库。[进入模块 →](python-programming/index.md)
+    Python是科学计算和数据分析的首选，掌握NumPy、SciPy、Pandas等关键库。
+    
+    [进入模块 →](python-programming/index.md)
 
 ??? note "☕ Java编程 - 构建高性能系统"
-    学习Java的高级特性：并发编程、函数式编程、流处理。[进入模块 →](java-programming/index.md)
+    学习Java的高级特性：并发编程、函数式编程、流处理。
+    
+    [进入模块 →](java-programming/index.md)
 
 ??? note "🔧 Gurobi求解器 - 专业优化工具"
-    Gurobi是业界顶级的商业优化求解器，掌握其Python接口和参数优化。[进入模块 →](gurobi-solver/index.md)
+    Gurobi是业界顶级的商业优化求解器，掌握其Python接口和参数优化。
+    
+    [进入模块 →](gurobi-solver/index.md)
 
 ??? note "🤖 机器学习 - 数据智能分析"
-    从监督学习到深度学习，全面掌握现代机器学习技术。[进入模块 →](machine-learning/index.md)
+    从监督学习到深度学习，全面掌握现代机器学习技术。
+    
+    [进入模块 →](machine-learning/index.md)
 
 ## ✅ 最新更新
 
@@ -88,4 +100,6 @@
 ---
 
 !!! success "🎯 准备好了吗？"
-    选择上方任一模块开始学习！祝你的研究和学习顺利！🚀
+    选择上方任一模块开始学习，或查看 [学习资源](resources.md) 获取更多推荐！
+    
+    祝你的研究和学习顺利！🚀
