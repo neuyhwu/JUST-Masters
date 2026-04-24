@@ -1,0 +1,114 @@
+site_name: 知识库 | JUST-Masters
+site_description: 一个组织化的知识整理网站
+site_author: Your Name
+site_url: https://example.com/
+
+# 使用Material主题
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  
+  # Material主题特性
+  features:
+    - navigation.tabs                    # 顶部标签导航
+    - navigation.sections               # 侧边栏分组
+    - navigation.top                    # 返回顶部按钮
+    - toc.integrate                     # 目录集成到左侧
+    - search.suggest                    # 搜索建议
+    - search.highlight                  # 搜索高亮
+    - content.tabs.link                 # 标签链接
+    - content.code.copy                 # 代码复制按钮
+  
+  # 色彩主题
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 浅色模式
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 深色模式
+
+# 导航菜单
+nav:
+  - 首页: index.md
+  - 开始: getting-started.md
+  - 哲学:
+      - 概述: philosophy/index.md
+      - 西方哲学: philosophy/western.md
+      - 马克思主义: philosophy/marxism.md
+  - 文学:
+      - 概述: literature/index.md
+      - 诗歌: literature/poetry.md
+      - 小说: literature/novels.md
+  - 历史:
+      - 概述: history/index.md
+      - 中国历史: history/china.md
+      - 世界历史: history/world.md
+  - 艺术:
+      - 概述: arts/index.md
+      - 视觉艺术: arts/visual.md
+      - 音乐: arts/music.md
+  - 关于: about.md
+
+# Markdown扩展配置
+markdown_extensions:
+  # 基础扩展
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 2-4
+  
+  # pymdownx扩展（需要pymdown-extensions包）
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# 插件配置
+plugins:
+  - search:
+      lang: zh
+
+# 额外设置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub
+
+copyright: Copyright &copy; 2024 - 2026
