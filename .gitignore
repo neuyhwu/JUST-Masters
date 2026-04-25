@@ -30,7 +30,7 @@ share/python-wheels/
 MANIFEST
 
 # MkDocs
-site/build/
+site/site/
 
 # IDE
 .vscode/
