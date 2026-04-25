@@ -6,7 +6,7 @@
 
 [在线查看网站](https://neuyhwu.github.io/JUST-Masters/)
 
-**网站名称**：JUST-YINGHUIWU-And-He's-Masters
+**网站名称**：JUST-Masters
 **学科方向**：运筹学、优化算法、编程与机器学习
 
 ## 📁 项目结构
