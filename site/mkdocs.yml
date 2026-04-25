@@ -64,6 +64,11 @@ nav:
       - 监督学习: machine-learning/supervised-learning.md
       - 无监督学习: machine-learning/unsupervised-learning.md
       - 深度学习基础: machine-learning/deep-learning-basics.md
+  - 📝 学术写作工坊:
+      - 概述: academic-writing-workshop/index.md
+      - Markdown使用方法: academic-writing-workshop/markdown-guide.md
+      - LaTeX排版详解: academic-writing-workshop/latex-guide.md
+      - 大模型学术写作提示词: academic-writing-workshop/llm-prompts.md
   - 📚 学习资源: resources.md
   - 关于: about.md
 

@@ -11,24 +11,26 @@
 - 🌓 **浅色/深色主题**：根据偏好切换显示模式
 - 📱 **响应式设计**：支持桌面和移动设备
 
-## 📘 六大核心模块
+## 📘 七大核心模块
 
-| 模块                                      | 主题                           | 适用场景           |
-| ----------------------------------------- | ------------------------------ | ------------------ |
-| [运筹学](operations-research/index.md)       | 线性规划、整数规划、网络流     | 决策优化、资源分配 |
-| [优化算法](optimization-algorithms/index.md) | 启发式、元启发式、高级方法     | 复杂问题求解       |
-| [Python编程](python-programming/index.md)    | 基础、科学计算、数据处理       | 科学计算和实现     |
-| [Java编程](java-programming/index.md)        | OOP、集合、并发编程            | 高性能系统开发     |
-| [Gurobi求解器](gurobi-solver/index.md)       | 安装配置、API使用、高级应用    | 专业优化问题求解   |
-| [机器学习](machine-learning/index.md)        | 监督学习、无监督学习、深度学习 | 预测和数据分析     |
+| 模块                                           | 主题                                       | 适用场景           |
+| ---------------------------------------------- | ------------------------------------------ | ------------------ |
+| [运筹学](operations-research/index.md)            | 线性规划、整数规划、网络流                 | 决策优化、资源分配 |
+| [优化算法](optimization-algorithms/index.md)    | 启发式、元启发式、高级方法                 | 复杂问题求解       |
+| [Python编程](python-programming/index.md)       | 基础、科学计算、数据处理                   | 科学计算和实现     |
+| [Java编程](java-programming/index.md)           | OOP、集合、并发编程                        | 高性能系统开发     |
+| [Gurobi求解器](gurobi-solver/index.md)          | 安装配置、API使用、高级应用                | 专业优化问题求解   |
+| [机器学习](machine-learning/index.md)           | 监督学习、无监督学习、深度学习             | 预测和数据分析     |
+| [学术写作工坊](academic-writing-workshop/index.md) | Markdown、LaTeX、大模型提示词 | 学术写作与排版     |
 
 ## 🎯 推荐学习路径
 
 ### 初级研究生（第一学期）
 
-1. [运筹学基础](operations-research/index.md) - 理解优化问题
-2. [Python编程](python-programming/index.md) - 掌握工具链
-3. [Python编程 - 科学计算](python-programming/scientific-computing.md) - 学习NumPy/SciPy
+1. [学术写作工坊 - Markdown](academic-writing-workshop/markdown-guide.md) - 快速掌握学术文档撰写
+2. [运筹学基础](operations-research/index.md) - 理解优化问题
+3. [Python编程](python-programming/index.md) - 掌握工具链
+4. [Python编程 - 科学计算](python-programming/scientific-computing.md) - 学习NumPy/SciPy
 
 ### 中级研究生（第二学期）
 
