@@ -23,9 +23,11 @@
 
 ```bash
 grbgetkey [license-key]
-具体操作如下：
-![找到"bin"的路径](../../figs/gurobi-激活-bin.png "gurobi-激活-bin")
 ```
+
+具体操作如下：
+
+![找到"bin"的路径](./images/gurobi-激活-bin.png "gurobi-激活-bin")
 
 ### 5. Python接口安装
 
